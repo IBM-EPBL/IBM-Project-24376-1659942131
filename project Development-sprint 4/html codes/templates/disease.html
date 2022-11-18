@@ -1,0 +1,100 @@
+
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+	<title>IBM FERTILIZER RECOMMENDATION SYSTEM</title>
+	<link rel="shortcut icon" href="{{ url_for('static', filename='images/favicon.ico') }}"/>
+
+	<!-- for-mobile-apps -->
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<meta charset="utf-8">
+	<meta name="keywords" content="Agro Harvest Responsive web template, Bootstrap Web Templates, Flat Web Templates, Android Compatible web template, 
+Smartphone Compatible web template, free webdesigns for Nokia, Samsung, LG, SonyEricsson, Motorola web design" />
+
+<style>
+  html body {
+    background-color: rgb(69, 224, 177);
+  }
+</style>
+<br /><br />
+  <h2 style="text-align: center; margin: 0px; color: black">
+    <b>Find out which disease has been caught by your plant</b>
+  </h2>
+  <br />
+  <br>
+
+<div style="
+    width: 350px;
+    height: 50rem;
+    margin: 0px auto;
+    color: black;
+    border-radius: 25px;
+    padding: 10px 10px;
+    font-weight: bold;
+  ">
+
+  
+
+
+  <form class="form-signin" method=post enctype=multipart/form-data>
+
+    <h2 class="h4 mb-3 font-weight-normal"><b>Please Upload The Image</b></h2>
+    <input type="file" name="file" class="form-control-file" id="inputfile" onchange="preview_image(event)" style="font-weight: bold;">
+    <br>
+    <br>
+    <img id="output-image" class="rounded mx-auto d-block" />
+    <button class="btn btn-lg btn-primary btn-block" type="submit" style="font-weight: bold;">Predict</button>
+
+
+  </form>
+</div>
+
+<script type="text/javascript">
+  function preview_image(event) {
+    var reader = new FileReader();
+    reader.onload = function () {
+      var output = document.getElementById('output-image')
+      output.src = reader.result;
+    }
+    reader.readAsDataURL(event.target.files[0]);
+  }
+</script>
+
+</div>
+<!-- Form section -->
+<footer class="text-center py-5">
+  <div class="container py-md-3">
+    <!-- logo -->
+    <h2 class="logo2 text-center">
+      <a href="{{ url_for('home') }}">
+        Harvestify
+      </a>
+    </h2>
+    <!-- //logo -->
+    <!-- address -->
+    <div class="contact-left-footer mt-4">
+
+
+
+
+
+      <!-- <a href="community.html">Community</a> -->
+      </p>
+    </div>
+    <div class="w3l-copy text-center">
+      <p class="text-da">An Environmental Intelligence Startup<br> </p>
+    </div>
+    <p class= url(../images/farm_background.jpg>
+    
+    
+  </div>
+</footer>
+<!-- //footer -->
+
+<!-- move top icon -->
+<a href="#home" class="move-top text-center"></a>
+<!-- //move top icon -->
+</body>
+
+</html>
